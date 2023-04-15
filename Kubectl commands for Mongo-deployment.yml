@@ -1,0 +1,25 @@
+# Kubectl apply commands for Mongo-deployment
+
+kubectl apply -f monogo.yml
+kubectl apply -f mongo-configmap.yml
+kubectl apply -f mongo-service.yml
+kubectl apply -f mongo-secret.yml
+Kubectl apply -f mongo-express-service.yml
+
+# kubectl get commands
+
+Kubectl get pods
+kubectl get pod -o wide
+kubect get deployment 
+kubectl get service
+kubectl ger secret
+
+#Kubectl debug commands
+
+kubectl describe pod mongodb-deployment-xxxxxx
+kubectl describe service mongodb-service
+kubectl logs mongo-express-xxxxxx
+
+# To get url for access mongo-express
+
+minikube service mongo-express-service 
