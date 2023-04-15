@@ -1,6 +1,7 @@
 # Basic Kubectl commands
 
 #To get list & status of pods , nodes & services
+
 Kubectl get pods
 
 Kubectl get nodes
